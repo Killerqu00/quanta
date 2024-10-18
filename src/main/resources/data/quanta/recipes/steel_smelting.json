@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "quanta:raw_enriched_iron"
+  },
+  "result": "quanta:steel_ingot",
+  "experience": 0.7,
+  "cookingtime": 200
+}
