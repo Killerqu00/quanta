@@ -1,6 +1,7 @@
 package com.killerqu.block;
 
 import com.killerqu.QConstants;
+import com.killerqu.item.QCreativeTab;
 import com.killerqu.item.QItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -22,7 +23,7 @@ public class QBlocks {
     }
 
     private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block) {
-        QItems.ITEM_REGISTRY.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+        QItems.ITEM_REGISTRY.register(name, () -> new BlockItem(block.get(), new Item.Properties().tab(QCreativeTab.QCreativeTab)));
     }
 
     public static void register(IEventBus eventBus) {

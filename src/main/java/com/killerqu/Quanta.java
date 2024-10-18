@@ -1,5 +1,6 @@
 package com.killerqu;
 
+import com.killerqu.block.QBlocks;
 import com.killerqu.item.QItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.Item;
@@ -18,8 +19,8 @@ public class Quanta {
     public Quanta() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         //modEventBus.addListener(this::commonSetup);
-        BLOCKS.register(modEventBus);
         QItems.register(modEventBus);
+        QBlocks.register(modEventBus);
         MinecraftForge.EVENT_BUS.register(this);
     }
 }
