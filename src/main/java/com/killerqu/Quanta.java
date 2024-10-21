@@ -15,7 +15,6 @@ import org.slf4j.Logger;
 
 @Mod(QConstants.MODID)
 public class Quanta {
-    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, QConstants.MODID);
     public Quanta() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         //modEventBus.addListener(this::commonSetup);
